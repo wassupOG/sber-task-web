@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #ececec;
+  margin: 3rem auto 6rem;
+  padding: 0px 20px 0px;
+  max-width: 80ch;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-60%); /* Start position, off the left side */
+    opacity: 0; /* Invisible */
+  }
+  to {
+    transform: translateX(0); /* End position, fully visible */
+    opacity: 1; /* Fully opaque */
+  }
+}
+
+.slide-in-element {
+  animation-name: slideIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}

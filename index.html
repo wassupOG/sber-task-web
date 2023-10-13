@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Number</title>
+  </head>
+
+  <body>
+    <h1 class="text-3xl m-10 text-center font-bold">Special for <span class="underline text-green-500">Sber</span> by
+      <a class="text-blue-400 hover:text-blue-500 underline" target="_blank" href="https://wassupog.ru/">Илья</a>
+    </h1>
+
+    <div class="flex flex-col gap-5">
+      <div class="flex flex-col">
+        <h2 class="font-medium text-2xl">Шаг №1</h2>
+        <p class="text-gray-500">Загрузите файл</p>
+      </div>
+      <div class="">
+        <input type="file" />
+      </div>
+
+      <hr class="border-1 border-slate-600 m-4">
+
+      <div class="flex flex-col">
+        <h2 class="font-medium text-2xl">Шаг №2</h2>
+        <p class="text-gray-500">Введите госномер для поиска</p>
+      </div>
+      <form class="flex gap-3 justify-center">
+        <input maxlength="9" placeholder="Введите номер авто в формате X000XX777..."
+          class="w-full border rounded-xl p-2" class id="searched" type="text">
+        <button type="submit"
+          class="bg-slate-700 text-white p-3 hover:bg-slate-800 active:bg-slate-900 active:translate-y-[1px] rounded-xl">Поиск</button>
+      </form>
+
+      <div class="text-gray-400">* При поиске буквы автоматически приводятся в верхний регистр</div>
+
+      <div data-explanation class="md:text-2xl text-gray-400 text-center mt-6">Результаты будут отображаться здесь
+      </div>
+    </div>
+
+
+
+
+    <script type="module" src="/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.4/xlsx.full.min.js"></script>
+  </body>
+
+</html>
